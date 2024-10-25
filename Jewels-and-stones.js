@@ -23,6 +23,9 @@ Constraints:
 
 // Solution
 
+
+// or
+
 let numJewelsInStones = function(jewels, stones) {
   let j = new Set(jewels);
   return stones.split('').reduce((res, s) => res + j.has(s), 0)
